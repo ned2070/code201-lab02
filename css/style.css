@@ -1,0 +1,83 @@
+body {
+  background-color: black;
+}
+h1 {
+  color: midnightblue;
+  background-color: aliceblue;
+  border: 10px;
+  border-color: white;
+  border-style: double;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+p {
+  font-size: 32px;
+}
+
+#tdiv {
+  border: 10px;
+  border-color: orange;
+  border-style: solid;
+}
+
+#qdiv {
+  border: 10px;
+  border-color: yellow;
+  border-style: groove;
+  background-color: aliceblue;
+  color: gold;
+}
+
+#t1 {
+  font-size: 16px;
+  color: red;
+  background-color: black;
+}
+
+#t2 {
+  color: orangered;
+  background-color: black;
+}
+
+#t3 {
+  color: darkred;
+  background-color: black;
+}
+
+#t4 {
+  color: brown;
+  background-color: black;
+}
+
+#q1 {
+  color: blue;
+  background-color: lightgrey;
+}
+
+#q2 {
+  color: yellow;
+  background-color: grey;
+}
+
+#q3 {
+  color: green;
+  background-color: lightgrey;
+}
+
+#q4 {
+  color: aqua;
+  background-color: grey;
+}
+
+#q5 {
+  color: slateblue;
+  background-color: lightgrey;
+}
+
+#biodiv {
+  background-color: slategray;
+  border: 5px;
+  border-color: gold;
+  border-style: solid;
+}
