@@ -13,6 +13,7 @@ h1 {
 
 p {
   font-size: 32px;
+  color: white;
 }
 
 #tdiv {
@@ -75,9 +76,26 @@ p {
   background-color: lightgrey;
 }
 
+#q6 {
+  color: aqua;
+  background-color: grey;
+}
+
+#q7 {
+  color: darkblue;
+  background-color: lightgrey;
+}
+
 #biodiv {
   background-color: slategray;
   border: 5px;
   border-color: gold;
+  border-style: solid;
+}
+
+#listdiv {
+  background-color: lightgrey;
+  border: 5px;
+  border-color: yellow;
   border-style: solid;
 }
