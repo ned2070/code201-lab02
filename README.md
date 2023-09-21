@@ -29,12 +29,10 @@ https://ned2070.github.io/code201-lab02/
 
 ![Alt text](<Screenshot from 2023-09-19 23-37-43.png>)
 
-
 20/09/2023 Unable to add screenshot but css largely unchanged
-
 
 ### Reflections and Comments
 
 Still more work needed on CSS
 
-
+21/09/23 - Neill and Susie
