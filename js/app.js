@@ -90,7 +90,8 @@ for (i = 1; i <= 5; i++) {
 
 for (j = 1; j < 5; j++) {
   let userAnswer6 = prompt("Guess a number between 1 and 50 (4 attempts)");
-  if (userAnswer6 < 1 || userAnswer6 > 50) {
+  parseInt(userAnswer6, 10);
+  if (userAnswer6 < 1 || userAnswer6 > 20) {
     window.alert("I'm asking for a number between 1 and 50, tr;y again");
     j--;
   } else if (userAnswer6 == myAnswer6) {
