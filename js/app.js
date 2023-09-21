@@ -22,47 +22,50 @@ const myAnswer7 = [
   "vermillion",
   "violet",
 ];
-
-userName = prompt(
-  "I'm pleased to allow you to introduce yourself. What's your name, visitor?"
-);
-if (userName.length === 0) {
-  userName = "Anoonymous";
+function getUserName() {
+  userName = prompt(
+    "I'm pleased to allow you to introduce yourself. What's your name, visitor?"
+  );
+  //if (userName.length === 0) {
+  //userName = "Anoonymous";
 }
 window.alert(" Welcome to my web page, " + userName + "!");
+console.log(userName);
+getUserName();
 
-for (i = 1; i <= 5; i++) {
-  switch (i) {
-    case 1:
-      userQuestion = "Do I know how many roads a man must walk down?";
-      myAnswer = "y";
-      break;
-    case 2:
-      userQuestion = "Was my first computer a ZX Spectrum?";
-      myAnswer = "n";
-      break;
-    case 3:
-      userQuestion = "Will I be annoyed if you misspell my name?";
-      myAnswer = "n";
-      break;
-    case 4:
-      userQuestion = "Can I climb every mountain?";
-      myAnswer = "n";
-      break;
-    case 5:
-      userQuestion =
-        "Have I made the answers to all of these questions the same to make the programming easier?";
-      myAnswer = "n";
-      break;
-    default:
-      console.log("Error in 1st switch statement");
+function showYesNO() {
+  for (i = 1; i <= 5; i++) {
+    switch (i) {
+      case 1:
+        userQuestion = "Do I know how many roads a man must walk down?";
+        myAnswer = "y";
+        break;
+      case 2:
+        userQuestion = "Was my first computer a ZX Spectrum?";
+        myAnswer = "n";
+        break;
+      case 3:
+        userQuestion = "Will I be annoyed if you misspell my name?";
+        myAnswer = "n";
+        break;
+      case 4:
+        userQuestion = "Can I climb every mountain?";
+        myAnswer = "n";
+        break;
+      case 5:
+        userQuestion =
+          "Have I made the answers to all of these questions the same to make the programming easier?";
+        myAnswer = "n";
+        break;
+      default:
+        console.log("Error in 1st switch statement");
+    }
+
+    let userAnswer = prompt(userQuestion);
+    userAnswer = userAnswer.toLowerCase();
+
+    //console.log(userAnswer);
   }
-
-  let userAnswer = prompt(userQuestion);
-  userAnswer = userAnswer.toLowerCase();
-
-  //console.log(userAnswer);
-
   if (userAnswer == "yes") {
     userAnswer = "y";
   } else if (userAnswer == "no") {
@@ -87,43 +90,50 @@ for (i = 1; i <= 5; i++) {
   //console.log(i);
   //console.log(userCounter);
 }
+showYesNO();
 
-for (j = 1; j < 5; j++) {
-  let userAnswer6 = prompt("Guess a number between 1 and 50 (4 attempts)");
-  parseInt(userAnswer6, 10);
-  if (userAnswer6 < 1 || userAnswer6 > 20) {
-    window.alert("I'm asking for a number between 1 and 50, tr;y again");
-    j--;
-  } else if (userAnswer6 == myAnswer6) {
-    window.alert("Right!");
-    userCounter++;
-    break;
-  } else if (userAnswer6 < myAnswer6) {
-    window.alert("Too low");
-  } else if (userAnswer6 > myAnswer6) {
-    window.alert("Too high");
-  } else if (j == 5) {
-    window.alert("Wrong and out of guesses!");
-  } else console.log("Problem with number guessing loop");
-  console.log(j);
-}
-
-outerloop: for (k = 1; k < 7; k++) {
-  userAnswer7 = prompt("Now guess one of my favourite colours (6 attempts)");
-  userAnswer7 = userAnswer7.toLowerCase();
-  for (m = 0; m < myAnswer7.length; m++) {
-    if (userAnswer7 == myAnswer7[m]) {
-      userCounter++;
+function showNumberGuess() {
+  for (j = 1; j < 5; j++) {
+    let userAnswer6 = prompt("Guess a number between 1 and 50 (4 attempts)");
+    parseInt(userAnswer6, 10);
+    if (userAnswer6 < 1 || userAnswer6 > 20) {
+      window.alert("I'm asking for a number between 1 and 50, tr;y again");
+      j--;
+    } else if (userAnswer6 == myAnswer6) {
       window.alert("Right!");
-    }
-    break outerloop;
-  }
-  if (k == 6) {
-    window.alert("Wrong and out of guesses!");
-  } else {
-    window.alert("Wrong!");
+      userCounter++;
+      break;
+    } else if (userAnswer6 < myAnswer6) {
+      window.alert("Too low");
+    } else if (userAnswer6 > myAnswer6) {
+      window.alert("Too high");
+    } else if (j == 5) {
+      window.alert("Wrong and out of guesses!");
+    } else console.log("Problem with number guessing loop");
+    console.log(j);
   }
 }
+showNumberGuess();
+
+function showColourGuess() {
+  outerloop: for (k = 1; k < 7; k++) {
+    userAnswer7 = prompt("Now guess one of my favourite colours (6 attempts)");
+    userAnswer7 = userAnswer7.toLowerCase();
+    for (m = 0; m < myAnswer7.length; m++) {
+      if (userAnswer7 == myAnswer7[m]) {
+        userCounter++;
+        window.alert("Right!");
+      }
+      break outerloop;
+    }
+    if (k == 6) {
+      window.alert("Wrong and out of guesses!");
+    } else {
+      window.alert("Wrong!");
+    }
+  }
+}
+showColourGuess();
 window.alert("You could have guessed any of these: " + myAnswer7.toString());
 
 window.alert("You made " + userCounter + " correct answers");
