@@ -2,82 +2,77 @@ body {
   background-color: black;
 }
 h1 {
-  color: midnightblue;
-  background-color: aliceblue;
+  color: red;
+  background-color: midnightblue;
   border: 10px;
   border-color: white;
   border-style: double;
   padding-top: 2rem;
+  padding-right: 1rem;
   padding-bottom: 2rem;
+  padding-left: 1rem;
 }
 
 p {
-  font-size: 32px;
-  color: white;
+  font-size: 24px;
+  color: black;
 }
 
-#tdiv {
+div {
   border: 10px;
+  border-style: groove;
+
+  padding-right: 1rem;
+
+  padding-left: 1rem;
+}
+#tdiv {
   border-color: orange;
-  border-style: solid;
+  background-color: black;
 }
 
 #qdiv {
-  border: 10px;
   border-color: yellow;
-  border-style: groove;
-  background-color: aliceblue;
-  color: gold;
+  background-color: black;
+  font-size: smaller;
 }
 
 #t1 {
   font-size: 16px;
   color: red;
-  background-color: black;
 }
 
 #t2 {
   color: orangered;
-  background-color: black;
-}
-
-#t3 {
-  color: darkred;
-  background-color: black;
-}
-
-#t4 {
-  color: brown;
-  background-color: black;
 }
 
 #q1 {
-  color: blue;
+  color: rgb(34, 60, 96); /*Admiral blue*/
   background-color: lightgrey;
 }
 
 #q2 {
-  color: yellow;
+  color: rgb(256, 0, 256); /*Magenta*/
   background-color: grey;
 }
 
 #q3 {
-  color: green;
+  color: rgb(74, 103, 65); /*Forest green*/
   background-color: lightgrey;
 }
 
 #q4 {
-  color: aqua;
+  color: rgb(4, 55, 242); /*Ultramarine*/
   background-color: grey;
 }
 
 #q5 {
-  color: slateblue;
+  color: rgb(127, 0, 255); /*Violet*/
   background-color: lightgrey;
 }
 
 #q6 {
-  color: aqua;
+  color: rgb(227, 66, 52); /*Vermillion*/
   background-color: grey;
 }
 
@@ -86,16 +81,17 @@ p {
   background-color: lightgrey;
 }
 
+li {
+  font-size: 24px;
+}
+
 #biodiv {
-  background-color: slategray;
-  border: 5px;
+  background-color: aliceblue;
   border-color: gold;
-  border-style: solid;
 }
 
 #listdiv {
-  background-color: lightgrey;
-  border: 5px;
+  background-color: antiquewhite;
+
   border-color: yellow;
-  border-style: solid;
 }

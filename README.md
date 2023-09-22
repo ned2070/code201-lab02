@@ -14,6 +14,13 @@ Added question about guessing number and question abiyt guessing against a list.
 Altered part of bio to list formats.
 Added top ten list of games.
 
+21/09/23 - Neill and Susie modified code with functions
+
+22/09/2023 lab 05b
+
+Improved appearance of page.
+Refactored code with more functions and do...while loops
+
 ### Author: Student/Group Name
 
 Neill Edwards
@@ -31,8 +38,12 @@ https://ned2070.github.io/code201-lab02/
 
 20/09/2023 Unable to add screenshot but css largely unchanged
 
+22/09/2023 Screenshot in repository
+
 ### Reflections and Comments
 
-Still more work needed on CSS
+Still more work needed on content and appearance.
 
-21/09/23 - Neill and Susie
+Most error checking on input was removed as it was a major source of problems.
+
+
