@@ -193,6 +193,18 @@ function sendMessage() {
   window.alert(finalMessage1 + userName + finalMessage2);
 }
 
+function showMyPic() {
+  if (myPic.className == "open") {
+    // read less
+    myPic.className = "closed";
+    myPicButton.innerHTML = "Press button to show picture";
+  } else {
+    //read more
+    myPic.className = "open";
+    myPicButton.innerHTML = "I regret my decision. Hide picture";
+  }
+}
+
 getUserName();
 getYnGuess();
 getNumberGuess();
